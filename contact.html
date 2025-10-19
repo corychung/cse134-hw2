@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script src=""></script>
+    <script src="empty.js"></script>
     <header>
         <nav>
             <ul>
@@ -18,8 +18,36 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <main>
         <h1>Contact Me</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <fieldset>
+                <legend>Select a topic:</legend>
+                <input type="radio" id="proj-inq" name="topic" checked />
+                <label for="proj-inq">Project Inquiry</label>
+                <input type="radio" id="collab-req" name="topic"/>
+                <label for="collab-req">Collaboration Request</label>
+                <input type="radio" id="other" name="topic"/>
+                <label for="other">Other</label>
+            </fieldset>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Send" />
+
+            <label for="progressBar">Sending message...</label>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </form>
+    </main>
+    <section>
+        <h2>Follow me!</h2>
     </section>
     <footer>
         <p>&copy; Cory Chung 2025</p>
