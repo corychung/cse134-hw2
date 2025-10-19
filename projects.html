@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        project-card {
+            border: 1px solid black;
+            display: inline-block;
+        }
+    </style>
   </head>
   <body>
     <script src=""></script>
@@ -23,14 +29,43 @@
             </button>
         </nav>
     </header>
-    <section>
-        <h1>Projects</h1>
-        <ol>
-            <li><a href="projects/duender.html"></a></li>
-            <li><a href="projects/odin.html">The Odin Project</a></li>
-            <li><a href="projects/portfolio.html">Project 3</a></li>
-        </ol>
-    </section>
+    <main>
+        <section>
+            <h1>Projects</h1>
+            <project-card>
+                <picture>
+                    <source srcset="media/duender.png" media="(min-width:800px)" />
+                    <img src="media/duender.png" alt="" width="300" />
+                </picture>  
+                <h2>DIY 3D Printer (Duender)</h2>
+                <a href="projects/duender.html">View Now</a><br>
+            </project-card>
+            <project-card>
+                <picture>
+                    <source srcset="https://www.theodinproject.com/assets/og-logo-2bdf3a30.png" media="(min-width:800px)" />
+                    <img alt="Thumbnail for The Odin Project" src="https://www.theodinproject.com/assets/og-logo-2bdf3a30.png" width="300" >
+                </picture>
+                <h2>The Odin Project</h2>
+                <a href="projects/odin.html">View Now</a><br>
+            </project-card>
+            <project-card>
+                <picture>
+                    <source srcset="media/portfolio_thumbnail.png" media="(min-width:800px)" />
+                    <img alt="Picture of this portfolio site" src="media/portfolio_thumbnail.png" width="300" >
+                </picture>
+                <h2>This Portfolio Site!</h2>
+                <a href="projects/portfolio.html">View Now</a><br>
+            </project-card>
+        </section>
+        <section>
+            <h2>Coming Soon</h2>
+            <ol>
+                <li><a href="">Coming Soon!</a></li>
+                <li><a href="">Coming Soon!</a></li>
+                <li><a href="">Coming Soon!</a></li>
+            </ol>
+        </section>
+    </main>
     <footer>
         <p>&copy; Cory Chung 2025</p>
     </footer>
