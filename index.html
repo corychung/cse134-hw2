@@ -31,7 +31,7 @@
                 <img src="media/duender.png" alt="" width="300" />
             </picture>  
             <h2>DIY 3D Printer (Duender)</h2>
-            <a href="projects/duender.html">View Now</a>
+            <a href="projects/duender.html">View Now</a><br>
         </project-card>
         <project-card>
             <picture>
@@ -39,7 +39,7 @@
                 <img alt="Thumbnail for The Odin Project" src="https://www.theodinproject.com/assets/og-logo-2bdf3a30.png" width="300" >
             </picture>
             <h2>The Odin Project</h2>
-            <a href="projects/odin.html">View Now</a>
+            <a href="projects/odin.html">View Now</a><br>
         </project-card>
         <project-card>
             <picture>
@@ -47,7 +47,7 @@
                 <img alt="Picture of this portfolio site" src="media/portfolio_thumbnail.png" width="300" >
             </picture>
             <h2>This Portfolio Site!</h2>
-            <a href="projects/portfolio.html">View Now</a>
+            <a href="projects/portfolio.html">View Now</a><br>
         </project-card>
     </main>
     <footer>
@@ -67,5 +67,20 @@
         </section>
     </dialog>
 
+    <!-- "Hello World" custom element -->
+    <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+            super();
+            console.log("Hello world!");
+            }
+        }
+
+        customElements.define('hello-world', HelloWorld);
+    </script>
+    
+    <!-- Usage of the custom element -->
+    <hello-world></hello-world>
+    
   </body>
 </html>
